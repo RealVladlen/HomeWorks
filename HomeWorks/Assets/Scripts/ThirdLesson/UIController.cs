@@ -10,16 +10,24 @@ public class UIController : MonoBehaviour
 
     [SerializeField] private PlaneController _planeController;
 
-    [SerializeField] private GameObject _gamePanel;
+    [SerializeField] private GameObject _gamePanel, _startGamePanel;
 
-    private CanvasGroup _gamePanelCanvas;
+    private CanvasGroup _gamePanelCanvas, _startGamePanelCanvas;
 
     private int _coinsCount;
     private int _lifeCount;
 
+    
     private void Start()
     {
+        _startGamePanel.SetActive(true);
+
+        Time.timeScale = 0;
+
+        _startGamePanelCanvas = _startGamePanel.GetComponent<CanvasGroup>();
         _gamePanelCanvas = _gamePanel.GetComponent<CanvasGroup>();
+
+        _startGamePanelCanvas.alpha = 1;
 
         _coinsCount = 0;
         _lifeCount = 3;
@@ -88,5 +96,14 @@ public class UIController : MonoBehaviour
         _gamePanelText.text = text;
 
         _gamePanelCanvas.DOFade(1, 0.5f);
+    }
+
+    public void StartGame()
+    {
+        Time.timeScale = 1;
+        _startGamePanelCanvas.DOFade(0, 0.5f).onComplete += () =>
+        {
+            _startGamePanel.SetActive(false);
+        };
     }
 }

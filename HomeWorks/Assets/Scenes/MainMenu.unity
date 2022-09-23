@@ -265,7 +265,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Third Lesson
+  m_text: Plane
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 576f468adad1dec4dbba4533e9464b5d, type: 2}
   m_sharedMaterial: {fileID: 3861131102315803227, guid: 576f468adad1dec4dbba4533e9464b5d, type: 2}

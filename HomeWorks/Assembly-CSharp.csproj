@@ -56,20 +56,20 @@
     <Analyzer Include="C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\ThirdLesson\UIController.cs" />
+    <Compile Include="Assets\Scripts\ThirdLesson\ShootController.cs" />
+    <Compile Include="Assets\Scripts\ThirdLesson\Rotation.cs" />
     <Compile Include="Assets\Scripts\SecondLesson\Coins.cs" />
     <Compile Include="Assets\Scripts\SceneController.cs" />
     <Compile Include="Assets\Scripts\ChessBoard\GeneratorChessBoard.cs" />
-    <Compile Include="Assets\Scripts\SecondLesson\Counter.cs" />
-    <Compile Include="Assets\Scripts\SecondLesson\PlayerController.cs" />
-    <Compile Include="Assets\Scripts\ThirdLesson\Rotation.cs" />
-    <Compile Include="Assets\Scripts\ThirdLesson\PlaneController.cs" />
-    <Compile Include="Assets\Scripts\ThirdLesson\Track.cs" />
-    <Compile Include="Assets\Scripts\ThirdLesson\CoinCollector.cs" />
-    <Compile Include="Assets\Scripts\ThirdLesson\UIController.cs" />
-    <Compile Include="Assets\Scripts\ThirdLesson\ShootController.cs" />
-    <Compile Include="Assets\Scripts\ThirdLesson\Coin.cs" />
-    <Compile Include="Assets\Scripts\ThirdLesson\Bomb.cs" />
     <Compile Include="Assets\Scripts\ThirdLesson\BombCollector.cs" />
+    <Compile Include="Assets\Scripts\ThirdLesson\CoinCollector.cs" />
+    <Compile Include="Assets\Scripts\SecondLesson\Counter.cs" />
+    <Compile Include="Assets\Scripts\ThirdLesson\Track.cs" />
+    <Compile Include="Assets\Scripts\SecondLesson\PlayerController.cs" />
+    <Compile Include="Assets\Scripts\ThirdLesson\Bomb.cs" />
+    <Compile Include="Assets\Scripts\ThirdLesson\PlaneController.cs" />
+    <Compile Include="Assets\Scripts\ThirdLesson\Coin.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
